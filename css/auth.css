@@ -1,0 +1,140 @@
+* { margin: 0; padding: 0; font-family: 'Raleway', sans-serif; }
+
+ul, li { display: block; padding: 0; margin: 0; }
+
+.container { margin: 0 auto; width: 90%; }
+
+body { background: url("../images/background.png") no-repeat top / cover; }
+
+a { text-decoration: none; }
+
+.logo { margin-top: 30px; }
+
+.content-menu .btn-acrive a { color: #fff; }
+
+.gta-acount__content { display: flex; margin-top: 100px; }
+
+.content-menu { width: 300px; }
+.content-menu a { color: #D2D2D2; font-size: 14px; font-weight: normal; }
+.content-menu a:hover { color: #fff; }
+.content-menu ul li { margin-top: 20px; }
+.content-menu ul li:first-child { margin-top: 0; }
+
+
+.content-form { width: 300px; }
+.content-form h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.content-form input {
+    margin-top: 16px;
+    width: 100%;
+    color: #D8D8D8;
+    font-size: 14px;
+    background: none;
+    border: 1px solid #fff;
+    padding: 20px 24px;
+}
+.content-form input:first-child { margin-top: 40px; }
+.content-form button {
+    margin-top: 16px;
+    width: 117%;
+    color: #fff;
+    background: #126FFB;
+    padding: 20px 0;
+    border: 1px solid #126FFB;
+    box-shadow: 0px 0px 16px rgba(18, 111, 251, 0.35);
+    transition: 0.3s;
+}
+.content-form input::placeholder { color: #D8D8D8; }
+.content-form button:hover { 
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.form-error {
+    left: 760px;
+    top: 437px;
+    position: absolute;
+    display: flex;
+    background: linear-gradient(90deg, rgba(255, 65, 65, 0.2475) 0%, rgba(255, 65, 65, 0) 100%);
+    backdrop-filter: blur(4px);
+    padding: 20px 90px 20px 24px;
+    border: 1px solid #FF4141;
+}
+
+.form-error p { 
+    margin-left: 10px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.vector-1 { position: absolute; width: 0px; height: 100%; left: 90px; top: 1px; border: 1px solid rgba(255, 255, 255, 0.05); }
+.vector-2 { position: absolute; width: 0px; height: 100%; left: 390px; top: 1px; border: 1px solid rgba(255, 255, 255, 0.05); }
+.vector-3 { position: absolute; width: 0px; height: 100%; left: 750px; top: 1px; border: 1px solid rgba(255, 255, 255, 0.05); }
+.vector-4 { position: absolute; width: 0px; height: 100%; left: 1150px; top: 1px; border: 1px solid rgba(255, 255, 255, 0.05); }
+.vector-5 { position: absolute; width: 0px; height: 100%; left: 1550px; top: 1px; border: 1px solid rgba(255, 255, 255, 0.05); }
+
+.switch-content .auth-page {
+    display: none;
+}
+
+.switch-content .rest-page {
+    display: none;
+}
+
+.switch-content .reg-page {
+    display: none;
+}
+
+.switch-content .auth-page.show {
+    display: block;
+}
+
+.switch-content .rest-page.show {
+    display: block;
+}
+
+.switch-content .reg-page.show {
+    display: block;
+}
+
+
+@media (max-width: 1700px) { .form-error { left: 750px; } }
+@media (max-width: 1500px) { .form-error { left: 740px; } }
+@media (max-width: 1300px) { .form-error { left: 730px; } }
+@media (max-width: 1280px) { 
+    .form-error { left: 725px; top: 366px; padding: 16px 24px; }
+    .content-form h1 { font-size: 18px; line-height: 24px; }
+    .content-form input:first-child { margin-top: 20px; }
+    .content-form input { margin-top: 10px; padding: 16px 24px; }
+    .content-form button { margin-top: 10px; padding: 16px 0; }
+}
+@media (max-width: 1100px) { .form-error { left: 715px; } }
+@media (max-width: 1000px) {
+    .content { margin-top: 60px; }
+    .content-menu { width: 250px; }
+    .form-error { left: 660px; top: 316px; }
+    .content-form input:first-child { margin-top: 10px; }
+}
+
+.switch-content .slots-page.show .text,
+.switch-content .slots-page.show {
+    font-size: 1.2vw;
+}
+
+.switch-content .slots-page {
+    display: none;
+}
+
+.switch-content .slots-page.show {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: transparent;
+}
