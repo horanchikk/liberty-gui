@@ -1,14 +1,22 @@
-* { margin: 0; padding: 0; font-family: 'Raleway', sans-serif; }
+/* Font from GFonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
+* { margin: 0; padding: 0; font-family: 'Raleway'}
 
 ul, li { display: block; padding: 0; margin: 0; }
 
-.container { margin: 0 auto; width: 90%; }
-
-body { background: url("../images/background.png") no-repeat top / cover; }
+body { background: url("../img/background.png") no-repeat top / cover; }
 
 a { text-decoration: none; }
 
-.logo { margin-top: 30px; }
+.container { margin: 0 auto; width: 90%; }
+
+.logo {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    width: 100px;
+}
 
 .content-menu .btn-acrive a { color: #fff; }
 
@@ -20,6 +28,44 @@ a { text-decoration: none; }
 .content-menu ul li { margin-top: 20px; }
 .content-menu ul li:first-child { margin-top: 0; }
 
+/* Background Lines */
+
+.linecontainer {
+    width: 100%;
+    height: 100%;
+}
+
+.line {
+    position: absolute;
+    height: 99%;
+    left: 10%;
+    top: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.line2 {
+    position: absolute;
+    height: 99%;
+    left: 387px;
+    top: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.line3 {
+    position: absolute;
+    height: 99%;
+    left: 707px;
+    top: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.line4 {
+    position: absolute;
+    height: 99%;
+    left: 1027px;
+    top: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
 
 .content-form { width: 300px; }
 .content-form h1 {
@@ -30,15 +76,22 @@ a { text-decoration: none; }
 }
 
 .content-form input {
-    margin-top: 16px;
-    width: 100%;
-    color: #D8D8D8;
+    color:#cccccc;
+    width: 297px;
+    height: 60px;
+    background-color: rgba(255,255,255,0.2);
+    border: 2px solid #cccccc;
+    font-weight: 500;
     font-size: 14px;
-    background: none;
-    border: 1px solid #fff;
-    padding: 20px 24px;
+    line-height: 16px;
+    padding-left: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: .2s ease-out;
 }
+
 .content-form input:first-child { margin-top: 40px; }
+
 .content-form button {
     margin-top: 16px;
     width: 117%;
@@ -49,6 +102,7 @@ a { text-decoration: none; }
     box-shadow: 0px 0px 16px rgba(18, 111, 251, 0.35);
     transition: 0.3s;
 }
+
 .content-form input::placeholder { color: #D8D8D8; }
 .content-form button:hover { 
     box-shadow: none;
@@ -56,14 +110,14 @@ a { text-decoration: none; }
 }
 
 .form-error {
-    left: 760px;
-    top: 437px;
-    position: absolute;
-    display: flex;
-    background: linear-gradient(90deg, rgba(255, 65, 65, 0.2475) 0%, rgba(255, 65, 65, 0) 100%);
+    position:absolute;
+    width: 296px;
+    height: 60px;
+    left: 355px;
+    top: 190px;
+    background: linear-gradient(90deg, rgba(255, 86, 86, 0.2475) 0%, rgba(255, 86, 86, 0) 100%);
     backdrop-filter: blur(4px);
-    padding: 20px 90px 20px 24px;
-    border: 1px solid #FF4141;
+    border-radius: 10px;
 }
 
 .form-error p { 
@@ -72,12 +126,6 @@ a { text-decoration: none; }
     font-weight: normal;
     font-size: 14px;
 }
-
-.vector-1 { position: absolute; width: 0px; height: 100%; left: 90px; top: 1px; border: 1px solid rgba(255, 255, 255, 0.05); }
-.vector-2 { position: absolute; width: 0px; height: 100%; left: 390px; top: 1px; border: 1px solid rgba(255, 255, 255, 0.05); }
-.vector-3 { position: absolute; width: 0px; height: 100%; left: 750px; top: 1px; border: 1px solid rgba(255, 255, 255, 0.05); }
-.vector-4 { position: absolute; width: 0px; height: 100%; left: 1150px; top: 1px; border: 1px solid rgba(255, 255, 255, 0.05); }
-.vector-5 { position: absolute; width: 0px; height: 100%; left: 1550px; top: 1px; border: 1px solid rgba(255, 255, 255, 0.05); }
 
 .switch-content .auth-page {
     display: none;
@@ -137,4 +185,137 @@ a { text-decoration: none; }
     display: -ms-flexbox;
     display: flex;
     background: transparent;
+}
+
+/* FIXME: Перенести в основную ветку ⬆️ */
+
+/* Menu */
+
+.menubtn {
+    position: absolute;
+    width: 86px;
+    height: 20px;
+    left: 175px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255, 0);
+    color: #D8D8D8;
+    font-family: 'Raleway';
+    font-size: 14px;
+    margin: 20px;
+    transition: .2s ease-out;
+}
+
+.js-btn-register {
+    top: 153px;
+}
+
+.js-btn-auth {
+    top: 193px;
+}
+
+.js-btn-restore {
+    top: 233px;
+}
+
+.menubtn:hover {
+    color:white;
+}
+
+/* Registration */
+
+.reg { 
+    color: white;
+    position: absolute;
+    width: 320px;
+    height: 478px;
+    left: 378px;
+    top: 171px;
+}
+
+.regtitle {
+    font-size: 24px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    line-height: 38px;
+    cursor:default;
+    font-weight: 600;
+}
+
+.reginput {
+    color:#cccccc;
+    width: 297px;
+    height: 60px;
+    background-color: rgba(255,255,255,0.2);
+    border: 2px solid #cccccc;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: .2s ease-out;
+}
+
+/* Disable outline */
+
+.reginput:active, :hover {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.reginput:focus {
+    outline: 0;
+    outline-offset: 0;
+    font-size: 20px;
+    border: 2px solid #ffffff;
+    color:#ffffff;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.reginput::placeholder {
+    color:#D8D8D8;
+}
+
+.reginputbtn {
+    width: 320px;
+    height: 60px;
+    margin-left: 10px;
+    cursor: pointer;
+    color:#D8D8D8;
+    background-color: #126FFB;
+    border: 1px solid #126FFB;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 16px rgba(18, 111, 251, 0.35);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 20px;
+    margin: 10px;
+    transition: .2s ease-out;
+}
+
+.reginputbtn:hover {
+    background-color: #3b89ff;
+    border: 1px solid #3b89ff;
+    box-shadow: 0px 0px 16px rgba(68, 143, 255, 0.35);
+}
+
+.nameblock {
+    position: absolute;
+    width: 180.11px;
+    height: 20px;
+    left: 743px;
+    top: 37px;
+}
+
+.errpasswd-img {
+    margin: 23px;
+}
+
+.errpasswd_title {
+    position: absolute;
+    padding-top: 20px;
+    cursor: default;
 }
