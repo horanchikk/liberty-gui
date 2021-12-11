@@ -44,10 +44,10 @@
                 <input type="text" class="reginput reginput_login" required placeholder="Логин" >
                 <input type="password" class="reginput reginput_passwd" required placeholder="Пароль">
                 <div class="form-error">
-                    <img src="img/err.svg" alt="img" class="errpasswd-img">
-                    <a class="errpasswd_title">Некорректный пароль</a>
+                    <img src="img/err.svg" alt="img" class="form_err_img">
+                    <a class="form_err_title">Некорректный пароль</a>
                 </div>
-                <button class="reginputbtn">Продолжить</button>
+                <button class="loginputbtn js-btn-auth">Продолжить</button>
             </div>
         </main>
          <!-- ВОССТАНОВЛЕНИЕ -->
@@ -74,22 +74,19 @@
                     </div>
                     <div class="reg">
                         <div class="regtitle">
-                            Создайте персонажа мечты для игрового мира
+                            Восстановление данных от вашего аккаунта
                         </div>
-                        <input type="text" class="reginput reginput_login" required placeholder="Логин" >
-                        <input type="email" class="reginput reginput_login" required placeholder="Электронный адрес" >
-                        <input type="password" class="reginput reginput_passwd" required placeholder="Пароль">
-                        <input type="password" class="reginput reginput_passwd" required placeholder="Подтверждение">
+                        <input type="text" class="reginput reginput_login js-restore-code" required placeholder="Проверочный код">
                         <div class="form-error">
-                            <img src="img/err.svg" alt="img" class="errpasswd-img">
-                            <a class="errpasswd_title">Некорректный пароль</a>
+                            <img src="img/err.svg" alt="img" class="form_err_img">
+                            <a class="form_err_title">Некорректный код</a>
                         </div>
-                        <button type="submit" class="reginputbtn">Продолжить</button>
+                        <button type="submit" class="recinputbtn js-btn-restore">Продолжить</button>
                     </div>
                 </div>
             </section>
         </main>
-
+        
         <!-- РЕГИСТРАЦИЯ -->
         
         <main class="gta-acount reg-and-restore registration  reg-page">

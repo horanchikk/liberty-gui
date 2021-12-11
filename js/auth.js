@@ -203,6 +203,7 @@ var slotR = null;
 $(document).ready(() => {
 	restPass = $('.entry-login');
 	restoreBtn = $('.js-btn-restore');
+	restoreCode = $('.js-restore-code'); // Код подтверждения восстановления, хз, сделайте что нить с этим
 	registerBtn = $('.js-btn-register');
 	authBackBtn = $('.js-btn-back');
 	authBtn = $('.js-btn-auth');

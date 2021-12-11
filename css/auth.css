@@ -18,10 +18,11 @@ a { text-decoration: none; }
     width: 100px;
 }
 
-.content-menu .btn-acrive a { color: #fff; }
-
 .gta-acount__content { display: flex; margin-top: 100px; }
 
+/* content-menu */
+
+.content-menu .btn-acrive a { color: #fff; }
 .content-menu { width: 300px; }
 .content-menu a { color: #D2D2D2; font-size: 14px; font-weight: normal; }
 .content-menu a:hover { color: #fff; }
@@ -67,7 +68,12 @@ a { text-decoration: none; }
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.content-form { width: 300px; }
+/* content-form */
+
+.content-form { 
+    width: 300px;
+}
+
 .content-form h1 {
     color: #fff;
     font-size: 24px;
@@ -90,7 +96,9 @@ a { text-decoration: none; }
     transition: .2s ease-out;
 }
 
-.content-form input:first-child { margin-top: 40px; }
+.content-form input:first-child { 
+    margin-top: 40px;
+}
 
 .content-form button {
     margin-top: 16px;
@@ -103,11 +111,16 @@ a { text-decoration: none; }
     transition: 0.3s;
 }
 
-.content-form input::placeholder { color: #D8D8D8; }
+.content-form input::placeholder { 
+    color: #D8D8D8;
+}
+
 .content-form button:hover { 
     box-shadow: none;
     cursor: pointer;
 }
+
+/* form-error */
 
 .form-error {
     position:absolute;
@@ -126,6 +139,32 @@ a { text-decoration: none; }
     font-weight: normal;
     font-size: 14px;
 }
+
+.form_err_img {
+    margin: 23px;
+}
+
+.form_err_title {
+    position: absolute;
+    padding-top: 20px;
+    cursor: default;
+}
+
+/* location of buttons */
+
+.js-btn-register {
+    top: 153px;
+}
+
+.js-btn-auth {
+    top: 193px;
+}
+
+.js-btn-restore {
+    top: 233px;
+}
+
+/* switch-content */
 
 .switch-content .auth-page {
     display: none;
@@ -207,18 +246,6 @@ a { text-decoration: none; }
     transition: .2s ease-out;
 }
 
-.js-btn-register {
-    top: 153px;
-}
-
-.js-btn-auth {
-    top: 193px;
-}
-
-.js-btn-restore {
-    top: 233px;
-}
-
 .menubtn:hover {
     color:white;
 }
@@ -278,6 +305,62 @@ a { text-decoration: none; }
     color:#D8D8D8;
 }
 
+/* Buttons for REG/REC/LOG */
+
+/* Rec btn */
+
+.recinputbtn {
+    width: 320px;
+    height: 60px;
+    margin-left: 10px;
+    cursor: pointer;
+    color:#D8D8D8;
+    background-color: #126FFB;
+    border: 1px solid #126FFB;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 16px rgba(18, 111, 251, 0.35);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 20px;
+    margin: 10px;
+    transition: .2s ease-out;
+}
+
+.recinputbtn:hover {
+    background-color: #3b89ff;
+    border: 1px solid #3b89ff;
+    box-shadow: 0px 0px 16px rgba(68, 143, 255, 0.35);
+}
+
+/* Log btn */
+
+.loginputbtn {
+    width: 320px;
+    height: 60px;
+    margin-left: 10px;
+    cursor: pointer;
+    color:#D8D8D8;
+    background-color: #126FFB;
+    border: 1px solid #126FFB;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 16px rgba(18, 111, 251, 0.35);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 20px;
+    margin: 10px;
+    transition: .2s ease-out;
+}
+
+.loginputbtn:hover {
+    background-color: #3b89ff;
+    border: 1px solid #3b89ff;
+    box-shadow: 0px 0px 16px rgba(68, 143, 255, 0.35);
+}
+
+/* Reg btn */
+
 .reginputbtn {
     width: 320px;
     height: 60px;
@@ -308,14 +391,4 @@ a { text-decoration: none; }
     height: 20px;
     left: 743px;
     top: 37px;
-}
-
-.errpasswd-img {
-    margin: 23px;
-}
-
-.errpasswd_title {
-    position: absolute;
-    padding-top: 20px;
-    cursor: default;
 }
