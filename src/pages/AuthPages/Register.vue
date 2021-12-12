@@ -7,15 +7,23 @@
   >
     <div class="regtitle">Создайте персонажа мечты для игрового мира</div>
 
-    <Input :placeholder="'Введите почту'" :type="'email'"/>
-    <Input :placeholder="'Введите логин'" :type="'text'"/>
-    <Input :placeholder="'Введите пароль'" :type="'password'"/>
-    <div class="form-error" style="position: absolute; top: 238px">
-      <img src="../../assets/img/err.svg" alt="img" class="form_err_img" />
-      <a class="form_err_title">Некорректный пароль</a>
+    <div class="input_wrapper">
+      <Input :placeholder="'Введите почту'" :type="'email'"/>
     </div>
-    <Input :placeholder="'Подтвердите пароль'" :type="'password'"/>
-    <!-- <Input :placeholder="'Код приглашения'" :type="'text'"/> -->
+
+    <div class="input_wrapper">
+      <Input :placeholder="'Введите логин'" :type="'text'"/>
+    </div>
+
+    <div class="input_wrapper">
+      <Input :placeholder="'Введите пароль'" :type="'password'"/>
+      <FormError :type="'error'" :text="'Некорректный пароль'"/>
+    </div>
+    
+    <div class="input_wrapper">
+      <Input :placeholder="'Подтвердите пароль'" :type="'password'"/>
+    </div>
+
     <router-link to="/auth/register2">
       <Button :text="'Создать аккаунт'"/>
     </router-link>
@@ -26,11 +34,13 @@
 <script>
 import Input from '@/components/Input/Input.vue';
 import Button from '@/components/Button/Button.vue';
+import FormError from '@/components/FormError/FormError.vue';
 
 export default {
   components: {
     Input,
-    Button
+    Button,
+    FormError
   }
 };
 </script>

@@ -1,25 +1,27 @@
 <template>
   <div class="regtitle">Восстановление данных от вашего аккаунта</div>
 
-  <Input :placeholder="'Электронная почта'" :type="'type'"/>
-
-  <div class="form-info" style="position: absolute; top: 107px;">
-    <img src="../../assets/img/info.svg" alt="img" class="form_info_img" />
-    <a class="form_info_title">Логин указан в письме</a>
+  <div class="input_wrapper">
+    <Input :placeholder="'Электронная почта'" :type="'text'"/>
+    <FormError :type="'info'" :text="'Логин указан в письме'"/>
   </div>
+
   <router-link to="/auth/restore2">
     <Button :text="'Восстановить'" />
   </router-link>
+
 </template>
 
 <script>
 import Input from '@/components/Input/Input.vue';
 import Button from '@/components/Button/Button.vue';
+import FormError from '@/components/FormError/FormError.vue';
 
 export default {
   components: {
     Input,
-    Button
+    Button,
+    FormError
   }
 };
 </script>

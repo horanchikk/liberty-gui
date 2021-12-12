@@ -43,6 +43,16 @@ const routes = [
                 component: Register2
             }
         ]
+    },
+    {
+        path: '',
+        component: Auth,
+        children: [
+            {
+                path: '',
+                component: Login
+            },
+        ]
     }
 ]
 

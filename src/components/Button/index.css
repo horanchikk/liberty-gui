@@ -1,7 +1,9 @@
 .button {
-    width: 320px;
+    box-sizing: border-box;
+    color: #cccccc;
+    min-width: 320px;
+    max-width: 320px;
     height: 60px;
-    margin-left: 10px;
     cursor: pointer;
     color: #D8D8D8;
     background-color: #126FFB;

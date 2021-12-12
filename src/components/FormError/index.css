@@ -1,0 +1,24 @@
+.form-error {
+  box-sizing: border-box;
+  min-width: 300px;
+  max-height: 60px;
+  min-height: 60px;
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+}
+
+.error {
+  background: linear-gradient(90deg,rgba(255, 86, 86, 0.2475) 0%, rgba(255, 86, 86, 0) 100%);
+}
+.info {
+  background: linear-gradient(90deg, rgba(255, 242, 122, 0.2475) 0%, rgba(255, 242, 122, 0) 100%);
+}
+
+.done {
+  background: linear-gradient(90deg, rgba(53, 203, 117, 0.2475) 0%, rgba(53, 203, 117, 0) 100%);
+}
+
+.form_err_img {
+  margin: 0 20px;
+}

@@ -6,9 +6,19 @@
     method="POST"
   >
     <div class="regtitle">Создайте персонажа мечты для игрового мира</div>
-    <Input :placeholder="'Имя персонажа'" :type="'text'"/>
-    <Input :placeholder="'Фамилия персонажа'" :type="'text'"/>
-    <Input :placeholder="'Возраст персонажа'" :type="'text'"/>
+    
+    <div class="input_wrapper">
+      <Input :placeholder="'Имя персонажа'" :type="'text'"/>
+    </div>
+
+    <div class="input_wrapper">
+      <Input :placeholder="'Фамилия персонажа'" :type="'text'"/>
+    </div>
+
+    <div class="input_wrapper">
+      <Input :placeholder="'Возраст персонажа'" :type="'text'"/>
+    </div>
+
     <router-link to="/auth">
       <Button :text="'Создать аккаунт'"/>
     </router-link>
