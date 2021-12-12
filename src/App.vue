@@ -13,4 +13,5 @@
   }
   @import url(./styles/auth.css);
   @import url(./styles/auth_new.css);
+  @import url(./styles/auth_new_new.css);
 </style>
