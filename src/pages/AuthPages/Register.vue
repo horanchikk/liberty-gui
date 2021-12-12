@@ -5,7 +5,7 @@
     action=""
     method="POST"
   >
-    <div class="regtitle">Регистрация</div>
+    <div class="regtitle">Создайте персонажа мечты для игрового мира</div>
 
     <Input :placeholder="'Введите почту'" :type="'email'"/>
     <Input :placeholder="'Введите логин'" :type="'text'"/>
@@ -16,8 +16,9 @@
     </div>
     <Input :placeholder="'Подтвердите пароль'" :type="'password'"/>
     <!-- <Input :placeholder="'Код приглашения'" :type="'text'"/> -->
-     
-    <Button :text="'Создать аккаунт'"/>
+    <router-link to="/auth/register2">
+      <Button :text="'Создать аккаунт'"/>
+    </router-link>
 
   </form>
 </template>

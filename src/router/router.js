@@ -1,5 +1,6 @@
 import Login from './../pages/AuthPages/Login.vue';
 import Register from './../pages/AuthPages/Register.vue';
+import Register2 from './../pages/AuthPages/Register2.vue';
 import Restore from './../pages/AuthPages/Restore.vue';
 import Restore2 from './../pages/AuthPages/Restore2.vue';
 import Restore3 from './../pages/AuthPages/Restore3.vue';
@@ -34,6 +35,10 @@ const routes = [
             {
                 path: '/auth/register',
                 component: Register
+            },
+            {
+                path: '/auth/register2',
+                component: Register2
             }
         ]
     }
