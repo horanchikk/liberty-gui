@@ -1,7 +1,9 @@
 import Login from './../pages/AuthPages/Login.vue';
 import Register from './../pages/AuthPages/Register.vue';
+// Переименуйте это как нибудь
 import Register2 from './../pages/AuthPages/Register2.vue';
 import Restore from './../pages/AuthPages/Restore.vue';
+// И это тоже
 import Restore2 from './../pages/AuthPages/Restore2.vue';
 import Restore3 from './../pages/AuthPages/Restore3.vue';
 import { createRouter, createWebHistory } from 'vue-router';
