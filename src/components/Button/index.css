@@ -1,0 +1,25 @@
+.button {
+    box-sizing: border-box;
+    color: #cccccc;
+    min-width: 320px;
+    max-width: 320px;
+    height: 60px;
+    cursor: pointer;
+    color: #D8D8D8;
+    background-color: #126FFB;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 16px rgb(18 111 251 / 35%);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;;
+    margin: 10px;
+    transition: .2s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: #3284ff;
+}

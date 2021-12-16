@@ -1,0 +1,462 @@
+/*  */
+/* Font from GFonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway";
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.logo {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  width: 100px;
+}
+
+.gta-acount__content {
+  display: flex;
+  margin-top: 100px;
+}
+
+/* content-menu */
+
+.content-menu .btn-acrive a {
+  color: #fff;
+}
+.content-menu {
+  width: 300px;
+}
+.content-menu a {
+  color: #d2d2d2;
+  font-size: 14px;
+  font-weight: normal;
+}
+.content-menu a:hover {
+  color: #fff;
+}
+.content-menu ul li {
+  margin-top: 20px;
+}
+.content-menu ul li:first-child {
+  margin-top: 0;
+}
+
+/* Background Lines */
+
+.linecontainer {
+  width: 100%;
+  height: 100%;
+}
+
+.line {
+  position: absolute;
+  height: 99%;
+  left: 10%;
+  top: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.line2 {
+  position: absolute;
+  height: 99%;
+  left: 387px;
+  top: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.line3 {
+  position: absolute;
+  height: 99%;
+  left: 707px;
+  top: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.line4 {
+  position: absolute;
+  height: 99%;
+  left: 1027px;
+  top: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* content-form */
+
+.content-form {
+  width: 300px;
+}
+
+.content-form h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.content-form input {
+  color: #cccccc;
+  width: 297px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #cccccc;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: 0.2s ease-out;
+}
+
+.content-form input:first-child {
+  margin-top: 40px;
+}
+
+.content-form button {
+  margin-top: 16px;
+  width: 117%;
+  color: #fff;
+  background: #126ffb;
+  padding: 20px 0;
+  border: 1px solid #126ffb;
+  box-shadow: 0px 0px 16px rgba(18, 111, 251, 0.35);
+  transition: 0.3s;
+}
+
+.content-form input::placeholder {
+  color: #d8d8d8;
+}
+
+.content-form button:hover {
+  box-shadow: none;
+  cursor: pointer;
+}
+
+/* form-error */
+
+/* from-info */
+
+.form-info {
+  position: absolute;
+  width: 296px;
+  height: 60px;
+  left: 355px;
+  top: 190px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 242, 122, 0.2475) 0%,
+    rgba(255, 242, 122, 0) 100%
+  );
+  backdrop-filter: blur(4px);
+}
+
+.form-info p {
+  margin-left: 10px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.form_info_img {
+  margin: 23px;
+}
+
+.form_info_title {
+  position: absolute;
+  padding-top: 22px;
+  cursor: default;
+}
+
+/* form-done */
+
+.form-done {
+  position: absolute;
+  width: 296px;
+  height: 60px;
+  left: 355px;
+  top: 190px;
+  background: linear-gradient(
+    90deg,
+    rgba(53, 203, 117, 0.2475) 0%,
+    rgba(53, 203, 117, 0) 100%
+  );
+  backdrop-filter: blur(4px);
+}
+
+.form-done p {
+  margin-left: 10px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.form_done_img {
+  margin: 23px;
+}
+
+.form_done_title {
+  position: absolute;
+  padding-top: 22px;
+  cursor: default;
+}
+
+/* location of buttons */
+
+.js-btn-register {
+  top: 153px;
+}
+
+.js-btn-auth {
+  top: 193px;
+}
+
+.js-btn-restore {
+  top: 233px;
+}
+
+/* switch-content */
+
+.switch-content .auth-page {
+  display: none;
+}
+
+.switch-content .rest-page {
+  display: none;
+}
+
+.switch-content .reg-page {
+  display: none;
+}
+
+.switch-content .auth-page.show {
+  display: block;
+}
+
+.switch-content .rest-page.show {
+  display: block;
+}
+
+.switch-content .reg-page.show {
+  display: block;
+}
+
+/* @media (max-width: 1700px) { .form-error { left: 750px; } }
+@media (max-width: 1500px) { .form-error { left: 740px; } }
+@media (max-width: 1300px) { .form-error { left: 730px; } }
+@media (max-width: 1280px) { 
+    .form-error { left: 725px; top: 366px; padding: 16px 24px; }
+    .content-form h1 { font-size: 18px; line-height: 24px; }
+    .content-form input:first-child { margin-top: 20px; }
+    .content-form input { margin-top: 10px; padding: 16px 24px; }
+    .content-form button { margin-top: 10px; padding: 16px 0; }
+}
+@media (max-width: 1100px) { .form-error { left: 715px; } }
+@media (max-width: 1000px) {
+    .content { margin-top: 60px; }
+    .content-menu { width: 250px; }
+    .form-error { left: 660px; top: 316px; }
+    .content-form input:first-child { margin-top: 10px; }
+} */
+
+.switch-content .slots-page.show .text,
+.switch-content .slots-page.show {
+  font-size: 1.2vw;
+}
+
+.switch-content .slots-page {
+  display: none;
+}
+
+.switch-content .slots-page.show {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: transparent;
+}
+
+/* FIXME: Перенести в основную ветку ⬆️ */
+
+/* Menu */
+
+.menubtn {
+  position: absolute;
+  width: 86px;
+  height: 20px;
+  left: 175px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255, 0);
+  color: #d8d8d8;
+  font-family: "Raleway";
+  font-size: 14px;
+  margin: 20px;
+  transition: 0.2s ease-out;
+}
+
+.menubtn:hover {
+  color: white;
+}
+
+/* Registration */
+
+.reg {
+  color: white;
+  position: absolute;
+  width: 320px;
+  height: 478px;
+  left: 378px;
+  top: 171px;
+}
+
+.regtitle {
+  font-size: 24px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  line-height: 38px;
+  cursor: default;
+  font-weight: 600;
+}
+
+.reginput {
+  color: #cccccc;
+  width: 297px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #cccccc;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: 0.2s ease-out;
+}
+
+/* Disable outline */
+
+.reginput:active,
+:hover {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.reginput:focus {
+  outline: 0;
+  outline-offset: 0;
+  font-size: 20px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.reginput::placeholder {
+  color: #d8d8d8;
+}
+
+/* Buttons for REG/REC/LOG */
+
+/* Rec btn */
+
+.recinputbtn {
+  width: 320px;
+  height: 60px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #d8d8d8;
+  background-color: #126ffb;
+  border: 1px solid #126ffb;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 16px rgba(18, 111, 251, 0.35);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 20px;
+  margin: 10px;
+  transition: 0.2s ease-out;
+}
+
+.recinputbtn:hover {
+  background-color: #3b89ff;
+  border: 1px solid #3b89ff;
+  box-shadow: 0px 0px 16px rgba(68, 143, 255, 0.35);
+}
+
+/* Log btn */
+
+.loginputbtn {
+  width: 320px;
+  height: 60px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #d8d8d8;
+  background-color: #126ffb;
+  border: 1px solid #126ffb;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 16px rgba(18, 111, 251, 0.35);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 20px;
+  margin: 10px;
+  transition: 0.2s ease-out;
+}
+
+.loginputbtn:hover {
+  background-color: #3b89ff;
+  border: 1px solid #3b89ff;
+  box-shadow: 0px 0px 16px rgba(68, 143, 255, 0.35);
+}
+
+/* Reg btn */
+
+.reginputbtn {
+  width: 320px;
+  height: 60px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #d8d8d8;
+  background-color: #126ffb;
+  border: 1px solid #126ffb;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 16px rgba(18, 111, 251, 0.35);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 20px;
+  margin: 10px;
+  transition: 0.2s ease-out;
+}
+
+.reginputbtn:hover {
+  background-color: #3b89ff;
+  border: 1px solid #3b89ff;
+  box-shadow: 0px 0px 16px rgba(68, 143, 255, 0.35);
+}
+
+.nameblock {
+  position: absolute;
+  width: 180.11px;
+  height: 20px;
+  left: 743px;
+  top: 37px;
+}
