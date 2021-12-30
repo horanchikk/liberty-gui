@@ -1,6 +1,6 @@
 <template>
   <div class="form-error"
-    :class="checkType(type)">    
+    :class="checkType(type)" :id="id">    
 
     <img v-if="type === 'error'" src='../../assets/img/err.svg' alt="img" class="form_err_img">
     <img v-else-if="type === 'info'" src='../../assets/img/info.svg' alt="img" class="form_err_img">
@@ -20,6 +20,9 @@ export default {
     type: {
       type: String,
       required: true
+    },
+    id: {
+      type: String
     }
   },
   methods: {

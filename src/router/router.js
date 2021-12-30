@@ -1,18 +1,15 @@
+import LayoutAuth from './../pages/AuthPages/LayoutAuth.vue';
 import Login from './../pages/AuthPages/Login.vue';
 import Register from './../pages/AuthPages/Register.vue';
-// Переименуйте это как нибудь
-import Register2 from './../pages/AuthPages/Register2.vue';
 import Restore from './../pages/AuthPages/Restore.vue';
-// И это тоже
-import Restore2 from './../pages/AuthPages/Restore2.vue';
-import Restore3 from './../pages/AuthPages/Restore3.vue';
+import Reset from './../pages/AuthPages/Reset.vue';
+import NotFound from './../pages/404.vue';
 import { createRouter, createWebHistory } from 'vue-router';
-import Auth from './../pages/AuthPages/Auth.vue';
 
 const routes = [
     {
         path: '/auth',
-        component: Auth,
+        component: LayoutAuth,
         children: [ 
             {
                 path: '',
@@ -22,36 +19,29 @@ const routes = [
                 path: 'restore',
                 component: Restore
             },
-            {
-                path: 'restore2',
-                component: Restore2
-            },
-            {
-                path: 'restore3',
-                component: Restore3
-            },
             { 
                 path: 'login',
                 component: Login
             },
             {
-                path: '/auth/register',
+                path: 'register',
                 component: Register
             },
             {
-                path: '/auth/register2',
-                component: Register2
-            }
+                path: 'reset/:uid',
+                component: Reset
+            },
         ]
     },
     {
-        path: '',
-        component: Auth,
+        path: '/:catchAll(.*)',
+        name: 'notFound',
+        component: LayoutAuth,
         children: [
             {
                 path: '',
-                component: Login
-            },
+                component: NotFound
+            }
         ]
     }
 ]
