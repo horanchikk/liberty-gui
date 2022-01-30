@@ -1,6 +1,6 @@
 # liberty-gui
 
-Gui for Liberty Role Play (don't distribute!!!)
+Gui for Liberty Role Play
 
 ---
 ## Project setup
